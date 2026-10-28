@@ -1,0 +1,74 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 72" width="320" height="72" fill="none" aria-label="Alvi Solar Energy Logo">
+  <!-- Defs: Gradients and Filters -->
+  <defs>
+    <linearGradient id="alviSunGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FBBF24" />
+      <stop offset="100%" stop-color="#D97706" />
+    </linearGradient>
+    <linearGradient id="alviGreenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#16A34A" />
+      <stop offset="50%" stop-color="#0F766E" />
+      <stop offset="100%" stop-color="#064E3B" />
+    </linearGradient>
+    <linearGradient id="alviPanelGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0284C7" />
+      <stop offset="100%" stop-color="#0369A1" />
+    </linearGradient>
+    <filter id="softShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-opacity="0.12" flood-color="#064E3B" />
+    </filter>
+  </defs>
+
+  <!-- Logo Mark / Emblem (64x64 on left) -->
+  <g transform="translate(4, 4)">
+    <!-- Base Background Circle (Subtle Tint) -->
+    <circle cx="32" cy="32" r="30" fill="#F0FDF4" stroke="#DCFCE7" stroke-width="1.5" />
+
+    <!-- Rising Sun Rays / Half Sun Arc -->
+    <path d="M19 28 A13 13 0 0 1 45 28 Z" fill="url(#alviSunGrad)" filter="url(#softShadow)" />
+    
+    <!-- Sun Rays radiating outward -->
+    <path d="M32 10 L32 14" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M20 14 L22.5 17.5" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M44 14 L41.5 17.5" stroke="#F59E0B" stroke-width="2.5" stroke-linecap="round" />
+    <path d="M13 23 L17 25" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" />
+    <path d="M51 23 L47 25" stroke="#F59E0B" stroke-width="2" stroke-linecap="round" />
+
+    <!-- Solar Photovoltaic Grid Cells (Angled Perspective Grid) -->
+    <g transform="translate(14, 30)">
+      <!-- Left Panel -->
+      <polygon points="2,2 17,2 15,16 0,16" fill="url(#alviGreenGrad)" />
+      <!-- Left Panel Grid lines -->
+      <line x1="9.5" y1="2" x2="7.5" y2="16" stroke="#FFFFFF" stroke-width="0.8" opacity="0.6" />
+      <line x1="1" y1="9" x2="16" y2="9" stroke="#FFFFFF" stroke-width="0.8" opacity="0.6" />
+
+      <!-- Right Panel -->
+      <polygon points="19,2 34,2 36,16 21,16" fill="url(#alviGreenGrad)" />
+      <!-- Right Panel Grid lines -->
+      <line x1="26.5" y1="2" x2="28.5" y2="16" stroke="#FFFFFF" stroke-width="0.8" opacity="0.6" />
+      <line x1="20" y1="9" x2="35" y2="9" stroke="#FFFFFF" stroke-width="0.8" opacity="0.6" />
+
+      <!-- Bottom Panel Base Line / Foundation -->
+      <polygon points="0,17 36,17 34,21 2,21" fill="#047857" opacity="0.9" />
+    </g>
+
+    <!-- Dynamic Energy Leaf Arc wrapping around bottom-left -->
+    <path d="M8 35 C8 48, 20 56, 33 56 C44 56, 52 49, 54 40 C50 45, 41 49, 32 49 C21 49, 14 43, 11 36 Z" fill="url(#alviGreenGrad)" />
+  </g>
+
+  <!-- Wordmark: ALVI SOLAR ENERGY -->
+  <g transform="translate(80, 0)">
+    <!-- Brand Primary Name: ALVI -->
+    <text x="0" y="38" font-family="'Plus Jakarta Sans', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="28" font-weight="800" fill="#0F172A" letter-spacing="1.5">
+      ALVI
+    </text>
+    
+    <!-- Accent Dot / Solar Spark -->
+    <circle cx="82" cy="24" r="3.5" fill="#D97706" />
+
+    <!-- Subtitle: SOLAR ENERGY -->
+    <text x="0" y="55" font-family="'Plus Jakarta Sans', 'Segoe UI', -apple-system, BlinkMacSystemFont, sans-serif" font-size="12" font-weight="700" fill="#065F46" letter-spacing="3.8">
+      SOLAR ENERGY
+    </text>
+  </g>
+</svg>
